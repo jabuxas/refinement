@@ -1,6 +1,11 @@
 @font-face {
     font-family: Lilex;
-    src: url(./fonts/Lilex-Regular.ttf);
+    src: url(./fonts/Lilex-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "JetBrainsMono Nerd Font";
+    src: url("./fonts/JetBrainsMono Nerd Font.ttf") format("truetype");
 }
 
 body {
@@ -10,6 +15,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    background-color: #1e1e1e;
+    color: #d4d4d4;
 }
 
 .container {
@@ -27,4 +35,40 @@ img {
     display: flex;
     align-items: center;
     gap: 2em;
+}
+
+.link-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.link-item a {
+    text-decoration: none;
+    color: #d4d4d4;
+    font-weight: bolder;
+}
+
+.icon {
+    font-family: "JetBrainsMono Nerd Font";
+}
+
+.github-icon:before {
+    content: "\f09b";
+    font-size: 3em;
+}
+
+.gitea-icon:before {
+    content: "\e702";
+    font-size: 3em;
+}
+
+.paste-icon:before {
+    content: "\f429";
+    font-size: 3em;
+}
+
+.mail-icon:before {
+    content: "\eb1c";
+    font-size: 3em;
 }
