@@ -1,0 +1,30 @@
+@font-face {
+    font-family: Lilex;
+    src: url(./fonts/Lilex-Regular.ttf);
+}
+
+body {
+    font-family: Lilex;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+img {
+    width: 150px;
+    border-radius: 50px;
+}
+
+.top-level div {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
