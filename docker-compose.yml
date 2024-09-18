@@ -5,3 +5,4 @@ services:
       - "28080:80"
     volumes:
       - ./dev/:/var/www/htdocs:ro
+    restart: unless-stopped
