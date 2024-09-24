@@ -11,6 +11,90 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <link href="style.css" rel="stylesheet" />
+
+    <style>
+        @font-face {
+            font-family: Lilex;
+            src: url(./fonts/Lilex-Regular.ttf) format("truetype");
+        }
+
+        @font-face {
+            font-family: "JetBrainsMono Nerd Font";
+            src: url("./fonts/JetBrains-Mono-Nerd-Font-Complete.ttf") format("truetype");
+        }
+
+        body {
+            font-family: Lilex;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background-color: #1e1e1e;
+            color: #d4d4d4;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        img {
+            width: 150px;
+            border-radius: 50px;
+        }
+
+        .top-level div {
+            display: flex;
+            align-items: center;
+            gap: 2em;
+        }
+
+        .link-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .link-item a {
+            text-decoration: none;
+            color: #d4d4d4;
+            font-weight: bolder;
+        }
+
+        .icon {
+            font-family: "JetBrainsMono Nerd Font";
+        }
+
+        .mail-icon:before {
+            content: "\f42f";
+            font-size: 2em;
+        }
+
+        .github-icon:before {
+            content: "\f09b";
+            font-size: 2em;
+        }
+
+        .gitea-icon:before {
+            content: "\e702";
+            font-size: 2.8em;
+        }
+
+        .paste-icon:before {
+            content: "\f429";
+            font-size: 2em;
+            padding-left: 5px;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 1rem;
+            font-size: 0.8rem;
+            color: #777;
+        }
+    </style>
 </head>
 
 <body>
@@ -25,19 +109,19 @@
         <div class="bottom-level">
             <div class="link-item">
                 <span class="mail-icon icon"></span>
-                <a href="mailto:jabuxas@proton.me">jabuxas@proton.me</a>
+                <a href="mailto:jabuxas@proton.me">my contact email</a>
             </div>
             <div class="link-item">
                 <span class="github-icon icon"></span>
-                <a href="https://github.com/jabuxas" target="_blank">github</a>
+                <a href="https://github.com/jabuxas" target="_blank">my github</a>
             </div>
             <div class="link-item">
                 <span class="gitea-icon icon"></span>
-                <a href="https://git.jabuxas.xyz/jabuxas" target="_blank">selfhosted gitea instance</a>
+                <a href="https://git.jabuxas.xyz/jabuxas" target="_blank">my gitea</a>
             </div>
             <div class="link-item">
                 <span class="paste-icon icon"></span>
-                <a href="https://paste.jabuxas.xyz" target="_blank">paste</a>
+                <a href="https://paste.jabuxas.xyz" target="_blank">my paste</a>
             </div>
         </div>
     </div>
