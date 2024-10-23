@@ -91,3 +91,8 @@ footer {
     font-size: 0.8rem;
     color: #777;
 }
+
+hr {
+    display: block;
+    margin: 1em auto;
+}
