@@ -20,11 +20,6 @@ body {
     color: #d4d4d4;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-}
-
 img {
     width: 150px;
     border-radius: 50px;
