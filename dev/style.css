@@ -74,6 +74,12 @@ img {
     padding-left: 7px;
 }
 
+.mastodon-icon:before {
+    content: "\edc0";
+    font-size: 2em;
+    padding-left: 4px;
+}
+
 .blog-icon:before {
     content: "\e287";
     font-size: 2em;
