@@ -4,8 +4,8 @@
 }
 
 @font-face {
-    font-family: "JetBrainsMono Nerd Font";
-    src: url("./fonts/JetBrains-Mono-Nerd-Font-Complete.ttf") format("truetype");
+    font-family: "Terminess Nerd Font";
+    src: url("./fonts/TerminessNerdFont-Regular.ttf") format("truetype");
 }
 
 body {
@@ -46,7 +46,8 @@ img {
 }
 
 .icon {
-    font-family: "JetBrainsMono Nerd Font";
+    font-family: "Terminess Nerd Font";
+    font-size: 2em;
 }
 
 .icon:before {
