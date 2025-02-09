@@ -21,9 +21,9 @@ body {
 }
 
 .image-container {
-    width: 100px;
-    height: 100px;
-    border-radius: 40px;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 3rem;
     overflow: hidden;
     position: relative;
 }
@@ -64,8 +64,8 @@ h2:hover {
 
 .icon {
     font-family: "Terminess Nerd Font";
-    font-size: 1.5em;
-    margin-bottom: 5px;
+    font-size: 1.3em;
+    padding-bottom: 0.5rem;
 }
 
 .icon:before {
@@ -116,7 +116,31 @@ footer {
     color: #777;
 }
 
+h2 {
+    font-size: 2.5em;
+}
+
+.link-item {
+    width: fit-content;
+}
+.bottom-level {
+    width: fit-content;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 hr {
-    display: block;
-    margin: 1em auto;
+    margin: 2.3em auto;
+}
+.icon:before {
+    font-size: 1.3em;
+    width: 0;
+    width: fit-content;
+    padding: 0;
+    margin-right: 3rem;
+    position: relative;
+    transform: translateX(50%);
 }
