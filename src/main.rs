@@ -31,7 +31,5 @@ fn dist(file: PathBuf) -> Option<(ContentType, Cow<'static, [u8]>)> {
 
 #[launch]
 fn rocket() -> _ {
-    rocket::build()
-        // .mount("/", FileServer::from("static"))
-        .mount("/", routes![index, dist])
+    rocket::build().mount("/", routes![index, dist])
 }
