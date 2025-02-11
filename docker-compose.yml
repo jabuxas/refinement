@@ -1,6 +1,6 @@
 services:
   web-server:
-    image: refinement
+    image: git.jabuxas.com/jabuxas/refinement:latest
     ports:
       - "8880:8000"
     environment:
