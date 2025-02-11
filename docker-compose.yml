@@ -1,8 +1,8 @@
 services:
-  web:
-    image: darkhttpd
+  web-server:
+    image: refinement
     ports:
-      - "28080:80"
-    volumes:
-      - ./dev/:/var/www/htdocs:ro
+      - "8880:8000"
+    environment:
+      ROCKET_ADDRESS: 0.0.0.0
     restart: unless-stopped
