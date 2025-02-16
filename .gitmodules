@@ -1,0 +1,3 @@
+[submodule "projects/finals-fe1"]
+	path = projects/finals-fe1
+	url = git@github.com:jabuxas/projeto-1-lucas.git
