@@ -1,8 +1,11 @@
 services:
   web-server:
     image: git.jabuxas.com/jabuxas/refinement:latest
+    # build: .
     ports:
       - "8880:8000"
     environment:
       ROCKET_ADDRESS: 0.0.0.0
+    volumes:
+      - "./projects:/projects"
     restart: unless-stopped
