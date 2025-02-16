@@ -1,146 +1,262 @@
 @font-face {
-    font-family: Lilex;
-    src: url(./fonts/Lilex-Regular.ttf) format("truetype");
+  font-family: Lilex;
+  src: url(./fonts/Lilex-Regular.ttf) format("truetype");
 }
 
 @font-face {
-    font-family: "Terminess Nerd Font";
-    src: url("./fonts/TerminessNerdFont-Regular.ttf") format("truetype");
+  font-family: "Terminess Nerd Font";
+  src: url("./fonts/TerminessNerdFont-Regular.ttf") format("truetype");
+}
+
+:root {
+  --font-color: #aeaeae;
+  --hover-color: #ebebeb;
+  --background-color: #1e1e1e;
+  --transition-time: 0.2s;
 }
 
 body {
-    font-family: Lilex;
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background-color: #1e1e1e;
-    color: #aeaeae;
+  font-family: Lilex;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-color);
+  color: var(--font-color);
 }
 
 .image-container {
-    width: 8rem;
-    height: 8rem;
-    border-radius: 3rem;
-    overflow: hidden;
-    position: relative;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 3rem;
+  overflow: hidden;
+  position: relative;
 }
 
 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top;
-    transform: scale(1.2);
-    transform-origin: top center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  transform: scale(1.2);
+  transform-origin: top center;
 }
 
 .top-level div {
-    display: flex;
-    align-items: center;
-    gap: 2em;
+  display: flex;
+  align-items: center;
+  gap: 2em;
 }
 
 .link-item {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .link-item a {
-    text-decoration: none;
-    font-weight: bolder;
-    display: flex;
-    color: #aeaeae;
-    align-items: center;
+  text-decoration: none;
+  font-weight: bolder;
+  display: flex;
+  color: var(--font-color);
+  align-items: center;
+}
+
+.link-item a,
+h2 {
+  transition: color var(--transition-time) ease-in-out;
 }
 
 .link-item a:hover,
 h2:hover {
-    color: #d4d4d4;
+  color: var(--hover-color);
 }
 
 .icon {
-    font-family: "Terminess Nerd Font";
-    font-size: 1.3em;
-    padding-bottom: 0.5rem;
+  font-family: "Terminess Nerd Font";
+  font-size: 1.3em;
+  padding-bottom: 0.5rem;
 }
 
 .icon:before {
-    margin-right: 30px;
+  margin-right: 30px;
 }
 
 .mail-icon:before {
-    content: "\f42f";
-    font-size: 1.5em;
-    padding-right: 6px;
+  content: "\f42f";
+  font-size: 1.5em;
+  padding-right: 6px;
 }
 
 .github-icon:before {
-    content: "\f09b";
-    font-size: 1.5em;
-    padding-right: 6px;
+  content: "\f09b";
+  font-size: 1.5em;
+  padding-right: 6px;
 }
 
 .gitea-icon:before {
-    content: "\e702";
-    font-size: 2em;
-    padding-right: 1px;
+  content: "\e702";
+  font-size: 2em;
+  padding-right: 1px;
 }
 
 .paste-icon:before {
-    content: "\f429";
-    font-size: 1.5em;
-    padding-right: 4px;
-    padding-left: 4px;
+  content: "\f429";
+  font-size: 1.5em;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+
+.projects-icon:before {
+  content: "\f114";
+  font-size: 1.5em;
+  padding-right: 4px;
+  padding-left: 4px;
 }
 
 .mastodon-icon:before {
-    content: "\edc0";
-    font-size: 2em;
+  content: "\edc0";
+  font-size: 2em;
 }
 
 .blog-icon:before {
-    content: "\f01f";
-    font-size: 1.5em;
-    padding-right: 8px;
-    /* padding-left: 4px; */
+  content: "\f01f";
+  font-size: 1.5em;
+  padding-right: 8px;
+  /* padding-left: 4px; */
 }
 
 footer {
-    position: absolute;
-    bottom: 1rem;
-    font-size: 0.8rem;
-    color: #777;
+  position: absolute;
+  bottom: 1rem;
+  font-size: 0.8rem;
+  color: #777;
 }
 
 h2 {
-    font-size: 2.5em;
+  font-size: 2.5em;
 }
 
 .link-item {
-    width: fit-content;
+  width: fit-content;
 }
 .bottom-level {
-    width: fit-content;
+  width: fit-content;
 }
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 hr {
-    margin: 2.3em auto;
+  margin: 2.3em auto;
 }
 .icon:before {
-    font-size: 1.3em;
-    width: 0;
-    width: fit-content;
-    padding: 0;
-    margin-right: 3rem;
-    position: relative;
-    transform: translateX(50%);
+  font-size: 1.3em;
+  width: 0;
+  width: fit-content;
+  padding: 0;
+  margin-right: 3rem;
+  position: relative;
+  transform: translateX(50%);
+}
+
+.underline {
+  text-decoration: none;
+  text-decoration: underline 1px;
+}
+
+.projects-page {
+  .top-level {
+    h2,
+    h3 {
+      margin: 0;
+    }
+    div {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    a {
+      text-decoration: none;
+      transition: color var(--transition-time) ease-in-out;
+      color: var(--font-color);
+    }
+    a:hover {
+      color: var(--hover-color);
+    }
+    .back-icon:before {
+      content: "\f100";
+      padding: unset;
+      margin: unset;
+      font-size: 0.6em;
+      text-decoration: none;
+    }
+  }
+  .bottom-level {
+    width: min-content;
+    .project-card {
+      /* LINK OVERLAY */
+      position: relative;
+      a.project-link:after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        pointer-events: auto;
+        content: "";
+        background-color: rgba(0, 0, 0, 0);
+      }
+      /* END LINK OVERLAY */
+
+      /* GRID */
+      /* 
+            | title | tech |
+            | ------------ |
+            | description  |
+            | (hidden link)| [see link overlay above, 0 height]
+            
+            */
+      display: grid;
+      grid-auto-columns: 1fr;
+      grid-template-columns: 3fr 1fr;
+      grid-template-rows: 3em auto 0fr;
+      gap: 0px 0px;
+      grid-template-areas:
+        "title tech"
+        "description description"
+        "hidden-link .";
+
+      h3 {
+        grid-area: title;
+        padding: 0;
+        margin: 0;
+      }
+
+      small {
+        grid-area: tech;
+        justify-self: end;
+      }
+      p {
+        grid-area: description;
+      }
+      a {
+        grid-area: hidden-link;
+      }
+      /* END GRID */
+
+      margin: 1rem;
+      border: 1px solid var(--font-color);
+      padding: 1rem;
+      border-radius: 0.5rem;
+      transition: border-color var(--transition-time) ease-in-out;
+      width: min(60rem, 100vw - 4rem);
+      &:hover {
+        border-color: var(--hover-color);
+      }
+    }
+  }
 }
