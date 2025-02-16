@@ -3,7 +3,7 @@ extern crate rocket;
 
 use std::{borrow::Cow, ffi::OsStr, path::PathBuf};
 
-use rocket::{http::ContentType, response::content::RawHtml};
+use rocket::{fs::FileServer, http::ContentType, response::content::RawHtml};
 use rust_embed::Embed;
 
 #[derive(Embed)]
@@ -31,5 +31,7 @@ fn dist(file: PathBuf) -> Option<(ContentType, Cow<'static, [u8]>)> {
 
 #[launch]
 fn rocket() -> _ {
-    rocket::build().mount("/", routes![index, dist])
+    rocket::build()
+        .mount("/", routes![index, dist])
+        .mount("/projects", FileServer::from("./projects"))
 }
