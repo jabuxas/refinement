@@ -1,6 +1,6 @@
 services:
   web-server:
-    image: git.jabuxas.com/jabuxas/refinement:latest
+    image: ghcr.io/jabuxas/refinement:latest
     # build: .
     ports:
       - "8880:8000"
