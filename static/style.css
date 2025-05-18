@@ -9,14 +9,17 @@
 }
 
 :root {
-  --font-color: #aeaeae;
-  --hover-color: #ebebeb;
-  --background-color: #1e1e1e;
+  /* --font-color: #aeaeae; */
+  /* --background-color: #1e1e1e; */
+  /* --hover-color: #ebebeb; */
+  --background-color: #121418;
+  --font-color: #e3e5e8;
+  --hover-color: #7bc0fb;
   --transition-time: 0.2s;
 }
 
 body {
-  font-family: Lilex;
+  font-family: Terminess Nerd Font;
   margin: 0;
   min-height: 100vh;
   display: flex;
@@ -74,12 +77,12 @@ h2:hover {
 }
 
 .icon {
-  font-family: "Terminess Nerd Font";
   font-size: 1.3em;
   padding-bottom: 0.5rem;
 }
 
 .icon:before {
+  font-family: Terminess Nerd Font;
   margin-right: 30px;
 }
 
@@ -219,7 +222,7 @@ hr {
             | description  |
             | (hidden link)| [see link overlay above, 0 height]
             
-            */
+      */
       display: grid;
       grid-auto-columns: 1fr;
       grid-template-columns: 3fr 1fr;
