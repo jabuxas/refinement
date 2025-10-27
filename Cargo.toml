@@ -11,4 +11,4 @@ panic = 'abort'
 
 [dependencies]
 rocket = "0.5.1"
-rust-embed = "8.7.2"
+rust-embed = "8.8.0"
